@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "845748619817",
+    "firebase_url": "https://cocos2d-x-d4d73.firebaseio.com",
+    "project_id": "cocos2d-x-d4d73",
+    "storage_bucket": "cocos2d-x-d4d73.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:845748619817:android:5cdfc3973698bdfa",
+        "android_client_info": {
+          "package_name": "org.cocos2dx.test2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "845748619817-qb1m1mgntik1tlh4bb01hmhi2t9kna75.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYHJIGXRyAQPVDUQ3R8pinicnvl2jKBL8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:845748619817:android:d309dfa865d1967b",
+        "android_client_info": {
+          "package_name": "org.cocos2dx.test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "845748619817-qb1m1mgntik1tlh4bb01hmhi2t9kna75.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYHJIGXRyAQPVDUQ3R8pinicnvl2jKBL8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

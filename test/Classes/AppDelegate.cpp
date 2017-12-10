@@ -1,7 +1,12 @@
 #include "AppDelegate.h"
 #include "HelloWorldScene.h"
+#include "firebase/app.h"
+#include "firebase/database.h"
+
 
 USING_NS_CC;
+using namespace firebase;
+using namespace firebase::database;
 
 AppDelegate::AppDelegate() {
 
@@ -40,6 +45,23 @@ bool AppDelegate::applicationDidFinishLaunching() {
     director->setAnimationInterval(1.0 / 60);
 
     FileUtils::getInstance()->addSearchPath("res");
+
+
+	// 這邊出錯  在加這段前都還可以
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
+	// Initialize Firebase for Android.
+	firebase::App* app = firebase::App::Create(firebase::AppOptions(), JniHelper::getEnv(), JniHelper::getActivity());
+	// Initialize AdMob.
+	//firebase::admob::Initialize(*app, "INSERT_YOUR_ADMOB_ANDROID_APP_ID");
+#elif (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
+	// Initialize Firebase for iOS.
+	firebase::App* app = firebase::App::Create(firebase::AppOptions());
+	// Initialize AdMob.
+	//firebase::admob::Initialize(*app, "INSERT_YOUR_ADMOB_IOS_APP_ID");
+#endif
+	// Initialize 
+	firebase::database::Database *database = ::firebase::database::Database::GetInstance(*app);
+
 
     // create a scene. it's an autorelease object
     auto scene = HelloWorld::createScene();
